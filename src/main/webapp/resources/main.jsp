@@ -15,7 +15,7 @@
 	<div class="wrap_default">
 		<!-- 로고 시작 { -->
 		<div id="logo">
-			<a href="/"><img src="/resources/img/logo.gif" alt="" /></a>
+			<a href="/"><img src="/resources/img/logo.png" alt="" /></a>
 		</div>
 		<!-- } 로고 끝 -->
 
@@ -26,7 +26,7 @@
 			<div id="horizontal_nav">
 				<ul class="horizontal-dropdown">
 					<li><a href="/aboutus?no=0" class="gnb_main">ABOUT US</a>
-					<li><a href="menu?no=0" class="gnb_main">SHOPPING</a>
+					<li><a href="/menu?no=0" class="gnb_main">SHOPPING</a>
 					<li><a href="/community?board_no=1" class="gnb_main">COMMUNITY</a>
 					<li><a href="/location" class="gnb_main">LOCATION</a>
 				</ul>
@@ -42,9 +42,9 @@
 
 	<div id="mainVisual" class="sub_visual">
 		<div class="visuals">
-			<a style="background: url(/resources/img/rolling_sub1.jpg) top center repeat-x"></a>
-			<a style="background: url(/resources/img/rolling_sub2.jpg) top center repeat-x"></a>
-			<a style="background: url(/resources/img/rolling_sub3.jpg) top center repeat-x"></a>
+			<a style="background: url(/resources/img/menu/rolling_main1.png) top center repeat-x"></a>
+			<a style="background: url(/resources/img/menu/rolling_main2.png) top center repeat-x"></a>
+			<a style="background: url(/resources/img/menu/rolling_main3.png) top center repeat-x"></a>
 		</div>
 		<div class="circle"></div>
 		<a class="spinn prev" href="#"><img src="/resources/img/rolling_prev.png"

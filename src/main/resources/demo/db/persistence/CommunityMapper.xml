@@ -9,7 +9,7 @@
 	</insert>
 
 	<select id="getBoards" resultType="demo.db.model.Board" parameterType="int">
-		SELECT * FROM board where boardId = #{boardId}
+		SELECT * FROM board where boardId = #{boardId} order by idx desc
 	</select>
 
 	<select id="getBoard" resultType="demo.db.model.Board" parameterType="int">

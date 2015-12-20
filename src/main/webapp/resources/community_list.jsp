@@ -71,9 +71,9 @@
 					</thead>
 					<c:if test="${count != '0' }">
 						<tbody class="xans-element- xans-board xans-board-list-1002 xans-board-list xans-board-1002"> 
-							<tr style="background-color:#FFFFFF; color:#555555;" class="xans-record-">
-								<c:forEach var="board" items="${boardList }">
-									<td><input class="boardChk" value="1" type="checkbox"  />1</td>
+							<c:forEach var="board" varStatus="status" items="${boardList }">	
+								<tr style="background-color:#FFFFFF; color:#555555;" class="xans-record-">
+									<td><input class="boardChk" value="1" type="checkbox"  />${status.count }</td>
 		                			<td class="displaynone"></td>
 		                			<td class="subject">
 		                      			<a href="/community/content/${board.idx}" style="color:#555555;">${board.title}</a> <span class="comment"></span>
@@ -81,9 +81,10 @@
 	                				<td>${board.userId }</td>
 					                <td class="txtLess ">${board.date }</td>
 					                <td class="txtLess ">${board.read }</td>
-								</c:forEach>
 								
-				            </tr>
+				            	</tr>
+				            </c:forEach>
+								
 						</tbody>
 					</c:if>
 				</table>
@@ -97,7 +98,7 @@
 
 			<div
 				class="xans-element- xans-board xans-board-buttonlist-1002 xans-board-buttonlist xans-board-1002  ">
-				<a href="/community/list?board_no=${board_no }" class=""><img
+				<a href="/community/post?board_no=${board_no }" class=""><img
 					src="http://img.echosting.cafe24.com/skin/base_ko_KR/board/btn_write.gif"
 					alt="글쓰기" /></a>
 			</div>

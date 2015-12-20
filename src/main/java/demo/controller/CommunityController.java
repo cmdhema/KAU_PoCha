@@ -55,6 +55,29 @@ public class CommunityController {
 		return mav;
 	}
 
+	@RequestMapping(value="/community/post")
+	public ModelAndView post(@RequestParam("board_no") int id ) {
+		ModelAndView mav = new ModelAndView("community_upload");
+		
+		if ( GlobalVariable.token != null )
+			mav.addObject("state", "login");
+		
+		if (id == 1) {
+			mav.addObject("title", "공지사항");
+		} else if (id == 2) {
+			mav.addObject("title", "뉴스/이벤트");
+		} else if (id == 6) {
+			mav.addObject("title", "질문과답변");
+		} else if (id == 4) {
+			mav.addObject("title", "구매후기");
+		} else if (id == 5) {
+			mav.addObject("title", "자유게시판");
+		}
+		mav.addObject("board_no", String.valueOf(id));
+		
+		return mav;
+	}
+	
 	@RequestMapping(value="/community/content/{id}")
 	public ModelAndView contents(@PathVariable("id") int id ) {
 		ModelAndView mav = new ModelAndView("community_content");

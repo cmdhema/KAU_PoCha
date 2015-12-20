@@ -42,7 +42,7 @@
 		<!-- 상단 제품 정보  -->
 		<div class="xans-element- xans-product xans-product-detail">
 			<div class="headingArea ">
-				<h2>[P000000P] 샘플상품 8</h2>
+				<h2>${menu.name }</h2>
 				<span class="delivery displaynone">(해외배송 가능상품)</span> <span
 					class="icon"> <img
 					src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_product_recommended.gif"
@@ -62,10 +62,10 @@
 				<div class="xans-element- xans-product xans-product-image imgArea">
 					<div class="keyImg ">
 						<a
-							href="/product/image_zoom2.html?product_no=16&cate_no=24&display_group=1"
+							href="${menu.photoUrl }"
 							alt="P000000P"
 							onclick="window.open(this.href, 'image_zoom2', 'toolbar=no,scrollbars=auto,resizable=yes,width=450,height=693,left=0,top=0', this);return false;"><img
-							src="//img.echosting.cafe24.com/thumb/img_product_big.gif" alt=""
+							src="${menu.photoUrl }" alt=""
 							class="BigImage " /></a>
 					</div>
 					<!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
@@ -77,12 +77,6 @@
 								class="ThumbImage" /></li>
 						</ul>
 					</div>
-					<!-- //참고 -->
-					<!--<div class="control">
-                <span class="prev"><a href="#none" onclick="alert('이전  상품이 없습니다.');" style="display:none;"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_product_prev.gif" alt="이전상품" /></a></span>
-                <span class="next"><a href="#none" onclick="viewProduct(16);" style="display:;"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_product_next.gif" alt="다음 제품 보기" /></a></span>
-                <a href="/product/image_zoom2.html?product_no=16&cate_no=24&display_group=1" onclick="window.open(this.href, 'image_zoom2', 'toolbar=no,scrollbars=auto,resizable=yes,width=560,height=710,left=0,top=0', this);return false;"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_product_zoom.gif" alt="확대보기" /></a>
-            </div>-->
 					<div class="control ">
 						<a href="#none" onclick="alert('이전  상품이 없습니다.');"
 							style="display: none;"><img src="/resources/img/view_btn_prev.gif"
@@ -119,70 +113,31 @@
 								<tr class=" xans-record-">
 									<th scope="row"><span
 										style="font-size: 16px; color: #555555;">상품명</span></th>
-									<td><span style="font-size: 16px; color: #555555;">샘플상품
-											8</span></td>
+									<td><span style="font-size: 16px; color: #555555;">${menu.name }</span></td>
 								</tr>
 								<tr class=" xans-record-">
 									<th scope="row"><span
 										style="font-size: 12px; color: #555555;">제조사</span></th>
-									<td><span style="font-size: 12px; color: #555555;">자체제작</span></td>
+									<td><span style="font-size: 12px; color: #555555;">${menu.ingredient }</span></td>
 								</tr>
 								<tr class=" xans-record-">
 									<th scope="row"><span
 										style="font-size: 12px; color: #555555;">소비자가</span></th>
 									<td><span style="font-size: 12px; color: #555555;"><span
-											id="span_product_price_custom">40,000원</span></span></td>
-								</tr>
-								<tr class=" xans-record-">
-									<th scope="row"><span
-										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span></th>
-									<td><span
-										style="font-size: 12px; color: #008BCC; font-weight: bold;"><strong
-											id="span_product_price_text">40,000원 </strong><input
-											id="product_price" name="product_price" value=""
-											type="hidden" /></span></td>
-								</tr>
-								<tr class=" xans-record-">
-									<th scope="row"><span
-										style="font-size: 12px; color: #555555;">상품코드</span></th>
-									<td><span style="font-size: 12px; color: #555555;">P000000P</span></td>
+											id="span_product_price_custom">${menu.cost }</span></span></td>
 								</tr>
 								<tr class=" xans-record-">
 									<th scope="row"><span
 										style="font-size: 12px; color: #555555;">수량</span></th>
 									<td><span style="font-size: 12px; color: #555555;"><span
 											id='NewProductQuantityDummy'><span class="quantity"><input
-													id="quantity" name="quantity_name"
+													id="quantity" name="quantity_name" 
 													style="width: 30px; height: 18px; border: 1px solid #BCBCBC;"
-													value="" type="text" /><img
+													value="1" type="text" /><img
 													src="http://img.echosting.cafe24.com/design/skin/mono/product/btn_basketUp.gif"
 													class="QuantityUp" alt="수량증가" /><img
 													src="http://img.echosting.cafe24.com/design/skin/mono/product/btn_basketDown.gif"
 													class="QuantityDown" alt="수량감소" /></span></span></span></td>
-								</tr>
-								<tr class=" xans-record-">
-									<th scope="row"><span
-										style="font-size: 12px; color: #555555;">트렌드</span></th>
-									<td><span style="font-size: 12px; color: #555555;">기본트렌드</span></td>
-								</tr>
-								<tr class=" xans-record-">
-									<th scope="row"><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span></th>
-									<td><span style="font-size: 12px; color: #555555;">국내배송</span></td>
-								</tr>
-								<tr class=" xans-record-">
-									<th scope="row"><span
-										style="font-size: 12px; color: #555555;">배송방법</span></th>
-									<td><span style="font-size: 12px; color: #555555;">택배</span></td>
-								</tr>
-								<tr class=" xans-record-">
-									<th scope="row"><span
-										style="font-size: 12px; color: #555555;">배송비</span></th>
-									<td><span style="font-size: 12px; color: #555555;"><div
-												class="delv_price_B">
-												<input id="delivery_cost_prepaid"
-													name="delivery_cost_prepaid" value="P" type="hidden" />무료
-											</div></span></td>
 								</tr>
 							</tbody>
 						</table>
@@ -265,7 +220,7 @@
 							</thead>
 							<tbody class="">
 								<tr>
-									<td>샘플상품 8</td>
+									<td>${menu.name }</td>
 									<td><span class="quantity"> <input id="quantity"
 											name="quantity_opt[]" style="" value="1" type="text" /> <a
 											href="#none"><img
@@ -274,10 +229,10 @@
 												src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
 												alt="수량감소" class="QuantityDown down" /></a>
 									</span></td>
-									<td class="right"><span class="quantity_price">40000</span>
+									<td class="right"><span class="quantity_price">${menu.cost }</span>
 										<span class="mileage displaynone">(<img
 											src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_product_point.gif" />
-											<span class="mileage_price">0</span>)
+											<span class="mileage_price">${menu.cost }</span>)
 									</span></td>
 								</tr>
 							</tbody>
@@ -308,7 +263,7 @@
 							<tfoot>
 								<tr>
 									<td colspan="3"><strong>총 상품금액</strong>(수량) : <span
-										class="total"><strong><em>0</em></strong> (0개)</span></td>
+										class="total"><strong><em>1</em></strong> (1개)</span></td>
 								</tr>
 							</tfoot>
 						</table>
@@ -318,22 +273,10 @@
 					<!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
 					<div class="xans-element- xans-product xans-product-action ">
 						<div class="btnArea">
-							<a href="#none" class="first "
-								onclick="product_submit(1, '/exec/front/order/basket/', this)"><img
-								src="/resources/img/btn_view_buy.gif" alt="바로구매하기" /></a> <a href="#none"
-								class=""
-								onclick="product_submit(2, '/exec/front/order/basket/', this)"><img
-								src="/resources/img/btn_view_cart.gif" alt="장바구니 담기" /></a> <span
-								class="displaynone"><img src="/img/btn_view_soldout.gif"
-								alt="SOLD OUT" /></span> <a href="#none"
-								onclick="add_wishlist_nologin('/member/login.html');" class=""><img
-								src="/resources/img/btn_view_wish.gif" alt="관심상품등록" /></a>
+							<a href="#none" onClick="addCart('${menu.name}', 1, '${menu.cost}', '${menu.photoUrl}')" class="first">
+								<img src="/resources/img/btn_view_cart.gif" alt="장바구니 담기" />
+							</a> 
 						</div>
-						<!-- 네이버 체크아웃 구매 버튼 -->
-						<div id="NaverChk_Button"></div>
-						<!-- //네이버 체크아웃 구매 버튼 -->
-
-
 					</div>
 					<!-- //참고 -->
 				</div>

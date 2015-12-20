@@ -46,12 +46,6 @@
 		<!-- 일반상품 -->
 		<div class="xans-element- xans-product xans-product-normalpackage ">
 			<div class="xans-element- xans-product xans-product-normalmenu ">
-				<!--
-            $compare_page = /product/compare.html
-        -->
-				<!--<div class="title" id="Product_ListMenu">
-            <h3><span>HIT PRODUCT</span></h3>
-        </div>-->
 				<div class="function">
 					<p class="prdCount">
 						등록 제품 : <strong>8</strong>개
@@ -76,38 +70,16 @@
 							src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_compare.gif"
 							alt="상품비교" /></a></span>
 				</div>
-				<fieldset class="condition displaynone">
-					<legend>조건별 검색</legend>
-					<p>
-
-						<select
-							class="xans-element- xans-product xans-product-firstselect FirstSelect"><option
-								value="">-조건선택-</option>
-							<option value="" class=""></option>
-						</select> <select
-							class="xans-element- xans-product xans-product-secondselect SecondSelect"><option
-								value="">-조건선택-</option>
-							<option value="" class=""></option>
-						</select> <a href="#SelectSearch" class="SelectSearch"><img
-							src="http://img.echosting.cafe24.com/skin/base_ko_KR/common/btn_list_search.gif"
-							alt="검색" /></a>
-					</p>
-				</fieldset>
 			</div>
 			<div class="xans-element- xans-product xans-product-listnormal">
-				<!--
-            $count = 12
-            $basket_result = /product/add_basket.html
-            $basket_option = /product/basket_option.html
-        -->
 				<ul class="prdList column4">
 					<li id="anchorBoxId_16" class="item xans-record-">
 						<div class="box">
 							<span class="chk"><input type="checkbox"
 								class="ProductCompareClass xECPCNO_16 displaynone" /></span> <a
-								href="/product/detail.html?product_no=16&cate_no=24&display_group=1"
-								name="anchorBoxName_16"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
+								href="/menu/16"
+								name="anchorBoxName_16">
+								<img src="/resources/img/menu/popular1_gajaeme.png"
 								id="eListPrdImage16_1" alt="" class="thumb" /></a>
 							<div class="status">
 								<div class="icon">
@@ -130,28 +102,16 @@
 									href="/product/detail.html?product_no=16&cate_no=24&display_group=1"
 									class=""><span class="title displaynone"><span
 											style="font-size: 12px; color: #555555;">상품명</span> :</span> <span
-										style="font-size: 12px; color: #555555;">샘플상품 8</span></a></strong>
+										style="font-size: 12px; color: #555555;">가재미회무침</span></a></strong>
 							</p>
 							<ul class="xans-element- xans-product xans-product-listitem">
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #555555;">제조사</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">자체제작</span></li>
+									style="font-size: 12px; color: #555555;">간재미(국산),오이,양파,당근,미나리</span></li>
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span>
 										:</strong> <span
-									style="font-size: 12px; color: #008BCC; font-weight: bold;">40,000원</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">트렌드</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">기본트렌드</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">국내배송</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송비</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">무료</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송방법</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">택배</span></li>
+									style="font-size: 12px; color: #008BCC; font-weight: bold;">20,000원</span></li>
 							</ul>
 						</div>
 					</li>
@@ -159,9 +119,9 @@
 						<div class="box">
 							<span class="chk"><input type="checkbox"
 								class="ProductCompareClass xECPCNO_15 displaynone" /></span> <a
-								href="/product/detail.html?product_no=15&cate_no=24&display_group=1"
+								href="/menu/15"
 								name="anchorBoxName_15"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
+								src="/resources/img/menu/popular2_ggomak.png"
 								id="eListPrdImage15_1" alt="" class="thumb" /></a>
 							<div class="status">
 								<div class="icon">
@@ -184,28 +144,16 @@
 									href="/product/detail.html?product_no=15&cate_no=24&display_group=1"
 									class=""><span class="title displaynone"><span
 											style="font-size: 12px; color: #555555;">상품명</span> :</span> <span
-										style="font-size: 12px; color: #555555;">샘플상품 7</span></a></strong>
+										style="font-size: 12px; color: #555555;">꼬막</span></a></strong>
 							</p>
 							<ul class="xans-element- xans-product xans-product-listitem">
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #555555;">제조사</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">자체제작</span></li>
+									style="font-size: 12px; color: #555555;">한국</span></li>
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span>
 										:</strong> <span
 									style="font-size: 12px; color: #008BCC; font-weight: bold;">35,000원</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">트렌드</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">기본트렌드</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">국내배송</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송비</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">무료</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송방법</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">택배</span></li>
 							</ul>
 						</div>
 					</li>
@@ -213,9 +161,9 @@
 						<div class="box">
 							<span class="chk"><input type="checkbox"
 								class="ProductCompareClass xECPCNO_14 displaynone" /></span> <a
-								href="/product/detail.html?product_no=14&cate_no=24&display_group=1"
+								href="/menu/14"
 								name="anchorBoxName_14"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
+								src="/resources/img/menu/popular3_sukhwa.png"
 								id="eListPrdImage14_1" alt="" class="thumb" /></a>
 							<div class="status">
 								<div class="icon">
@@ -238,28 +186,16 @@
 									href="/product/detail.html?product_no=14&cate_no=24&display_group=1"
 									class=""><span class="title displaynone"><span
 											style="font-size: 12px; color: #555555;">상품명</span> :</span> <span
-										style="font-size: 12px; color: #555555;">샘플상품 6</span></a></strong>
+										style="font-size: 12px; color: #555555;">석화</span></a></strong>
 							</p>
 							<ul class="xans-element- xans-product xans-product-listitem">
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #555555;">제조사</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">자체제작</span></li>
+									style="font-size: 12px; color: #555555;">한국</span></li>
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span>
 										:</strong> <span
 									style="font-size: 12px; color: #008BCC; font-weight: bold;">30,000원</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">트렌드</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">기본트렌드</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">국내배송</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송비</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">무료</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송방법</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">택배</span></li>
 							</ul>
 						</div>
 					</li>
@@ -267,9 +203,9 @@
 						<div class="box">
 							<span class="chk"><input type="checkbox"
 								class="ProductCompareClass xECPCNO_13 displaynone" /></span> <a
-								href="/product/detail.html?product_no=13&cate_no=24&display_group=1"
+								href="/menu/13"
 								name="anchorBoxName_13"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
+								src="/resources/img/menu/popular4_ddukbokgi.png"
 								id="eListPrdImage13_1" alt="" class="thumb" /></a>
 							<div class="status">
 								<div class="icon">
@@ -292,28 +228,16 @@
 									href="/product/detail.html?product_no=13&cate_no=24&display_group=1"
 									class=""><span class="title displaynone"><span
 											style="font-size: 12px; color: #555555;">상품명</span> :</span> <span
-										style="font-size: 12px; color: #555555;">샘플상품 5</span></a></strong>
+										style="font-size: 12px; color: #555555;">국물떡볶이</span></a></strong>
 							</p>
 							<ul class="xans-element- xans-product xans-product-listitem">
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #555555;">제조사</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">자체제작</span></li>
+									style="font-size: 12px; color: #555555;">떡,어묵,양파,마늘,달걀</span></li>
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span>
 										:</strong> <span
-									style="font-size: 12px; color: #008BCC; font-weight: bold;">25,000원</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">트렌드</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">기본트렌드</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">국내배송</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송비</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">무료</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송방법</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">택배</span></li>
+									style="font-size: 12px; color: #008BCC; font-weight: bold;">15,000원</span></li>
 							</ul>
 						</div>
 					</li>
@@ -321,9 +245,9 @@
 						<div class="box">
 							<span class="chk"><input type="checkbox"
 								class="ProductCompareClass xECPCNO_12 displaynone" /></span> <a
-								href="/product/detail.html?product_no=12&cate_no=24&display_group=1"
+								href="/menu/12"
 								name="anchorBoxName_12"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
+								src="/resources/img/menu/popular5_nakji.png"
 								id="eListPrdImage12_1" alt="" class="thumb" /></a>
 							<div class="status">
 								<div class="icon">
@@ -346,28 +270,16 @@
 									href="/product/detail.html?product_no=12&cate_no=24&display_group=1"
 									class=""><span class="title displaynone"><span
 											style="font-size: 12px; color: #555555;">상품명</span> :</span> <span
-										style="font-size: 12px; color: #555555;">샘플상품 4</span></a></strong>
+										style="font-size: 12px; color: #555555;">낚지볶음과 소면</span></a></strong>
 							</p>
 							<ul class="xans-element- xans-product xans-product-listitem">
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #555555;">제조사</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">자체제작</span></li>
+									style="font-size: 12px; color: #555555;">낙지(국내산),소면,양파,깨</span></li>
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span>
 										:</strong> <span
 									style="font-size: 12px; color: #008BCC; font-weight: bold;">20,000원</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">트렌드</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">기본트렌드</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">국내배송</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송비</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">무료</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송방법</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">택배</span></li>
 							</ul>
 						</div>
 					</li>
@@ -375,9 +287,9 @@
 						<div class="box">
 							<span class="chk"><input type="checkbox"
 								class="ProductCompareClass xECPCNO_11 displaynone" /></span> <a
-								href="/product/detail.html?product_no=11&cate_no=24&display_group=1"
+								href="/menu/11"
 								name="anchorBoxName_11"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
+								src="/resources/img/menu/new_dakkangjung.png"
 								id="eListPrdImage11_1" alt="" class="thumb" /></a>
 							<div class="status">
 								<div class="icon">
@@ -400,28 +312,16 @@
 									href="/product/detail.html?product_no=11&cate_no=24&display_group=1"
 									class=""><span class="title displaynone"><span
 											style="font-size: 12px; color: #555555;">상품명</span> :</span> <span
-										style="font-size: 12px; color: #555555;">샘플상품 3</span></a></strong>
+										style="font-size: 12px; color: #555555;">닭강정</span></a></strong>
 							</p>
 							<ul class="xans-element- xans-product xans-product-listitem">
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #555555;">제조사</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">자체제작</span></li>
+									style="font-size: 12px; color: #555555;">닭 가슴살(국산), 마늘</span></li>
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span>
 										:</strong> <span
 									style="font-size: 12px; color: #008BCC; font-weight: bold;">15,000원</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">트렌드</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">기본트렌드</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">국내배송</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송비</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">무료</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송방법</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">택배</span></li>
 							</ul>
 						</div>
 					</li>
@@ -429,9 +329,9 @@
 						<div class="box">
 							<span class="chk"><input type="checkbox"
 								class="ProductCompareClass xECPCNO_10 displaynone" /></span> <a
-								href="/product/detail.html?product_no=10&cate_no=24&display_group=1"
+								href="/menu/10"
 								name="anchorBoxName_10"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
+								src="/resources/img/menu/new_ddongjip.png"
 								id="eListPrdImage10_1" alt="" class="thumb" /></a>
 							<div class="status">
 								<div class="icon">
@@ -452,28 +352,16 @@
 									href="/product/detail.html?product_no=10&cate_no=24&display_group=1"
 									class=""><span class="title displaynone"><span
 											style="font-size: 12px; color: #555555;">상품명</span> :</span> <span
-										style="font-size: 12px; color: #555555;">샘플상품 2</span></a></strong>
+										style="font-size: 12px; color: #555555;">집통마늘소금똥집</span></a></strong>
 							</p>
 							<ul class="xans-element- xans-product xans-product-listitem">
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #555555;">제조사</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">자체제작</span></li>
+									style="font-size: 12px; color: #555555;">닭고기(국내산),감자,양파,청양고추,대파</span></li>
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span>
 										:</strong> <span
 									style="font-size: 12px; color: #008BCC; font-weight: bold;">10,000원</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">트렌드</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">기본트렌드</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">국내배송</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송비</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">무료</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송방법</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">택배</span></li>
 							</ul>
 						</div>
 					</li>
@@ -481,9 +369,9 @@
 						<div class="box">
 							<span class="chk"><input type="checkbox"
 								class="ProductCompareClass xECPCNO_9 displaynone" /></span> <a
-								href="/product/detail.html?product_no=9&cate_no=24&display_group=1"
+								href="/menu/9"
 								name="anchorBoxName_9"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
+								src="/resources/img/menu/new_bulgogi.png"
 								id="eListPrdImage9_1" alt="" class="thumb" /></a>
 							<div class="status">
 								<div class="icon">
@@ -504,28 +392,16 @@
 									href="/product/detail.html?product_no=9&cate_no=24&display_group=1"
 									class=""><span class="title displaynone"><span
 											style="font-size: 12px; color: #555555;">상품명</span> :</span> <span
-										style="font-size: 12px; color: #555555;">샘플상품 1</span></a></strong>
+										style="font-size: 12px; color: #555555;">쫄깃 오삼불고</span></a></strong>
 							</p>
 							<ul class="xans-element- xans-product xans-product-listitem">
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #555555;">제조사</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">자체제작</span></li>
+									style="font-size: 12px; color: #555555;">삼겹살(국내산),김치(국내산),홍어(국내산),깻잎(국내산)</span></li>
 								<li class=" xans-record-"><strong class="title displaynone"><span
 										style="font-size: 12px; color: #008BCC; font-weight: bold;">판매가</span>
 										:</strong> <span
-									style="font-size: 12px; color: #008BCC; font-weight: bold;">5,000원</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">트렌드</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">기본트렌드</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">국내·해외배송</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">국내배송</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송비</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">무료</span></li>
-								<li class=" xans-record-"><strong class="title "><span
-										style="font-size: 12px; color: #555555;">배송방법</span> :</strong> <span
-									style="font-size: 12px; color: #555555;">택배</span></li>
+									style="font-size: 12px; color: #008BCC; font-weight: bold;">15,000원</span></li>
 							</ul>
 						</div>
 					</li>

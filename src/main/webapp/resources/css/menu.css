@@ -355,7 +355,10 @@
 }
 
 .xans-product-listnormal ul.column4 li.item .thumb {
+	min-width: 238px;
+	min-height: 238px;
 	max-width: 238px;
+	max-height:238px;
 }
 
 .xans-product-listnormal ul.column5 li.item {

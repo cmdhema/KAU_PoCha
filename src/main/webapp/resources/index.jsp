@@ -24,7 +24,7 @@
 	<div class="wrap_default">
 		<!-- 로고 시작 { -->
 		<div id="logo">
-			<a href="/"><img src="/resources/img/logo.gif" alt="" /></a>
+			<a href="/"><img src="/resources/img/logo.png" alt="" /></a>
 		</div>
 		<!-- } 로고 끝 -->
 
@@ -48,12 +48,9 @@
 
 	<div id="mainVisual" class="main_visual">
 		<div class="visuals">
-			<a
-				style="background: url(/resources/img/rolling_main1.jpg) top center repeat-x"></a>
-			<a
-				style="background: url(/resources/img/rolling_main2.jpg) top center repeat-x"></a>
-			<a
-				style="background: url(/resources/img/rolling_main3.jpg) top center repeat-x"></a>
+			<a style="background: url(/resources/img/menu/rolling_main1.png) top center repeat-x"></a>
+			<a style="background: url(/resources/img/menu/rolling_main2.png) top center repeat-x"></a>
+			<a style="background: url(/resources/img/menu/rolling_main3.png) top center repeat-x"></a>
 		</div>
 		<div class="circle"></div>
 		<a class="spinn prev" href="#"><img
@@ -95,72 +92,62 @@
 					<div id="imgList">
 						<div class="xans-record-">
 							<a
-								href="/product/detail.html?product_no=14&cate_no=1&display_group=2"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
-								onmouseover="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
-								onmouseout="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
+								href="/menu/16"><img
+								src="/resources/img/menu/popular1_gajaeme.png"
 								alt="" /></a>
 							<p>
 								<a
 									href="/product/detail.html?product_no=14&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 6</span></a><br /> <span
-									class="price">30,000원</span>
-							</p>
-						</div>
-						<div class="xans-record-">
-							<a
-								href="/product/detail.html?product_no=13&cate_no=1&display_group=2"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
-								onmouseover="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
-								onmouseout="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
-								alt="" /></a>
-							<p>
-								<a
-									href="/product/detail.html?product_no=13&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 5</span></a><br /> <span
-									class="price">25,000원</span>
-							</p>
-						</div>
-						<div class="xans-record-">
-							<a
-								href="/product/detail.html?product_no=12&cate_no=1&display_group=2"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
-								onmouseover="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
-								onmouseout="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
-								alt="" /></a>
-							<p>
-								<a
-									href="/product/detail.html?product_no=12&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 4</span></a><br /> <span
+									style="font-size: 12px; color: #555555;">간자미 회무침</span></a><br /> <span
 									class="price">20,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
 							<a
-								href="/product/detail.html?product_no=11&cate_no=1&display_group=2"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
-								onmouseover="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
-								onmouseout="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
+								href="/menu/15"><img
+								src="/resources/img/menu/popular2_ggomak.png"
+								alt="" /></a>
+							<p>
+								<a
+									href="/product/detail.html?product_no=13&cate_no=1&display_group=2"><span
+									style="font-size: 12px; color: #555555;">꼬막</span></a><br /> <span
+									class="price">35,000원</span>
+							</p>
+						</div>
+						<div class="xans-record-">
+							<a
+								href="/menu/14"><img
+								src="/resources/img/menu/popular3_sukhwa.png"
+								alt="" /></a>
+							<p>
+								<a
+									href="/product/detail.html?product_no=12&cate_no=1&display_group=2"><span
+									style="font-size: 12px; color: #555555;">석화</span></a><br /> <span
+									class="price">30,000원</span>
+							</p>
+						</div>
+						<div class="xans-record-">
+							<a
+								href="/menu/13"><img
+								src="/resources/img/menu/popular4_ddukbokgi.png"
 								alt="" /></a>
 							<p>
 								<a
 									href="/product/detail.html?product_no=11&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 3</span></a><br /> <span
+									style="font-size: 12px; color: #555555;">국물떡볶이</span></a><br /> <span
 									class="price">15,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
 							<a
-								href="/product/detail.html?product_no=16&cate_no=1&display_group=2"><img
-								src="//img.echosting.cafe24.com/thumb/img_product_big.gif"
-								onmouseover="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
-								onmouseout="this.src='//img.echosting.cafe24.com/thumb/img_product_big.gif'"
+								href="/menu/11"><img
+								src="/resources/img/menu/new_dakkangjung.png"
 								alt="" /></a>
 							<p>
 								<a
 									href="/product/detail.html?product_no=16&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 8</span></a><br /> <span
-									class="price">40,000원</span>
+									style="font-size: 12px; color: #555555;">닭강정</span></a><br /> <span
+									class="price">15,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
@@ -216,21 +203,16 @@
 	<div id="wrap_notice">
 		<div id="notice_line_right"></div>
 		<div id="notice_title">
-			<a href="/board/free/list.html?board_no=1"><img
+			<a href="/community?board_no=1"><img
 				src="/resources/img/notice_title.gif" alt="" /></a>
 		</div>
 
 		<div id="notice"
 			class="xans-element- xans-board xans-board-list-1 xans-board-list xans-board-1 notice_list">
-			<!--
-    $count = 5
-    $main_list = yes
-    $subject_cut = 300
-    $main_list_reply_view = no
-    -->
-			<ul id="marquee2" class="marquee">
-				<li class="xans-record-"><a
-					href="/board/free/read.html?no=1&board_no=1">몰 오픈을 축하합니다.</a></li>
+
+			<ul>
+				<li class=""><a
+					href="/board/free/read.html?no=1&board_no=1">${notice }</a></li>
 			</ul>
 		</div>
 	</div>
@@ -253,10 +235,11 @@
 		<div id="latest_area">
 			<div class="latest_title_round">
 				<div class="latest_title">
-					<a href="/board/free/list.html?board_no=4">REVIEWS</a>
+					<a href="/community?board_no=4">REVIEWS</a>
+					<div>${review }</div>
 				</div>
 				<div class="latest_more">
-					<a href="/board/free/list.html?board_no=4">more</a>
+					<a href="/community?board_no=4">more</a>
 				</div>
 			</div>
 			<div class="latest_round"></div>
@@ -264,10 +247,11 @@
 
 			<div class="latest_title_round">
 				<div class="latest_title">
-					<a href="/board/free/list.html?board_no=6">QnA</a>
+					<a href="/community?board_no=6">QnA</a>
+					<div>${qanda }</div>
 				</div>
 				<div class="latest_more">
-					<a href="/board/free/list.html?board_no=6">more</a>
+					<a href="/community?board_no=6">more</a>
 				</div>
 			</div>
 			<div class="latest_round"></div>

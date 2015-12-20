@@ -4,8 +4,10 @@ public class Menu {
 	int idx;
 	String name;
 	String photoUrl;
-	int cost;
+	String ingredient;
+	String cost;
 	String description;
+	
 	public int getIdx() {
 		return idx;
 	}
@@ -24,18 +26,25 @@ public class Menu {
 	public void setPhotoUrl(String photoUrl) {
 		this.photoUrl = photoUrl;
 	}
-	public int getCost() {
-		return cost;
-	}
-	public void setCost(int cost) {
-		this.cost = cost;
-	}
 	public String getDescription() {
 		return description;
 	}
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	public String getIngredient() {
+		return ingredient;
+	}
+	public void setIngredient(String ingredient) {
+		this.ingredient = ingredient;
+	}
+	public String getCost() {
+		return cost;
+	}
+	public void setCost(String cost) {
+		this.cost = cost;
+	}
+	
 	
 	
 }

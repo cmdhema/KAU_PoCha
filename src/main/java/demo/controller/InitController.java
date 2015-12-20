@@ -8,11 +8,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import demo.db.persistence.CommunityMapper;
 import demo.db.persistence.UserMapper;
 import demo.util.GlobalVariable;
 
 @RestController
 public class InitController {
+	
+	@Autowired
+	CommunityMapper communityMapper;
 	
 	@Autowired
 	StringRedisTemplate redis;
@@ -25,6 +29,23 @@ public class InitController {
 		ModelAndView mv = new ModelAndView("index");
 		System.out.println("Index cookie : " + cookieToken);
 		ValueOperations<String, String> ops = this.redis.opsForValue();
+		
+		if ( communityMapper.getBoards(1).size() == 0 ) {
+			mv.addObject("notice", "등록된 공지사항이 없습니다.");
+		} else
+			mv.addObject("notice", communityMapper.getBoards(1).get(0).getTitle());
+
+		if ( communityMapper.getBoards(6).size() == 0 ) {
+			mv.addObject("qanda", "등록된 Q&A 없습니다.");
+		} else
+			mv.addObject("qanda", communityMapper.getBoards(6).get(0).getTitle());
+		
+		if ( communityMapper.getBoards(4).size() == 0 ) {
+			mv.addObject("review", "등록된 리뷰 없습니다.");
+		} else
+			mv.addObject("review", communityMapper.getBoards(4).get(0).getTitle());
+		
+		
 		if ( cookieToken.equals("null") ) {
 			return mv;
 		} else {
