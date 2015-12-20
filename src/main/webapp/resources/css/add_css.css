@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* 공통적으로 사용되는 css */
+
+@import url(nanumgothic/nanumgothic.css);
+
+html {overflow-y:scroll}
+html, body {margin:0 auto;border:0}
+
+/* 레이아웃 관련 */
+#top_bg {clear:both;height:36px;background:#525}
+.wrap_default {clear:both;position:relative;margin:0 auto;width:1200px}
+
+/* 최상단 영역(왼쪽링크)  */
+#body_top_left {position:absolute;left:0}
+#body_top_left img {float:left;margin-left:1px;font-size:0;letter-spacing:-1px;white-space:nowrap}
+#top_bg .gnb_blank {color:white;padding:0 10px;}
+#top_left {float:left;margin-top:12px}
+#top_left ul {margin:0;padding:0;list-style:none}
+#top_left ul li {float:left;vertical-align:top}
+#top_left a {text-decoration:none;font:bold 10px Nanum Gothic,'나눔고딕';color:#ccc;vertical-align:top}
+#top_left a:hover {color:#fff}
+
+/* 최상단 영역(회원관련)  */
+#top_right {float:right;margin-top:12px}
+#top_right ul {margin:0;padding:0;list-style:none}
+#top_right ul li {float:left;vertical-align:top}
+#top_right a {text-decoration:none;font:bold 10px Nanum Gothic,'나눔고딕';color:#ccc;vertical-align:top}
+#top_right a:hover {color:#fff}
+#top_right #logout_color {color:#f88;vertical-align:top}
+#top_right .cart_count {font-weight:bold;vertical-align:top}
+
+/* 움직이는 이미지 */
+#icon_moving {position:absolute;margin-top:14px;margin-left:55px;width:155px;height:27px;z-index:21}
+
+/* 로고 */
+.wrap_default #logo {float:left;margin-top:60px;margin-bottom:60px;margin-left:10px}
+
+/* 상단메뉴 */
+#gnb_top {float:right}
+#horizontal_nav {margin-top:62px;height:70px}
+#horizontal_nav ul {padding:0;list-style:none}
+ul.horizontal-dropdown {position:relative;float:left;margin:0}
+ul.horizontal-dropdown li {float:left;padding:0}
+ul.horizontal-dropdown a {display:block;margin:0 12px;padding:11px 13px 17px;text-decoration:none;blr:expression(this.onFocus=this.blur());font:bold 14px Nanum Gothic,'나눔고딕';color:#333;line-height:12px;outline:none}
+ul.horizontal-dropdown li.hover a.gnb_main {background:url(/resources/img/gnb_bg_hover.gif) repeat-x}
+ul.horizontal-dropdown li.hover a.gnb_main {color:#949}
+ul.horizontal-dropdown ul {position:absolute;margin-left:4px;overflow:hidden;z-index:31}
+ul.horizontal-dropdown ul li {display:none;background:#949}
+ul.horizontal-dropdown ul li a {position:relative;display:block;float:left;top:0;left:0;padding:8px 0;blr:expression(this.onFocus=this.blur());font:bold 11px '돋움',dotum;color:#fff;letter-spacing:-1px;line-height:12px;outline:none}
+ul.horizontal-dropdown ul li a:hover {color:#fcf}
+
+/* 검색 */
+#wrap_search {float:right;margin-top:-25px;margin-bottom:5px;width:129px}
+#wrap_search fieldset {margin:0;padding:0;border:none}
+#wrap_search img {position:absolute;margin-top:3px;right:0}
+
+/* 언어선택 */
+#wrap_language {position:relative;float:right;margin-top:-42px;z-index:11}
+.language_area {float:left;height:32px;padding-right:6px;background:url(/resources/img/language_bg.png)}
+#language_title {margin-top:10px;padding:0 5px 0 10px;font:10px arial;color:#fff}
+@-moz-document url-prefix() {#language_title {margin-top:8px}}
+#language_select ul {margin:5px 0 0;padding:0;list-style:none}
+#language_select ul li {float:left;margin-left:5px;margin-bottom:5px;width:30px;height:22px;overflow:hidden}
+#language_select ul li img {padding:0;border:0}
+
+/* 맨 위로 버튼 */
+.wrap_default #on_top {display:block;position:fixed;right:0;bottom:0;z-index:101}
+
+/* 하단메뉴 */
+#gnb_bottom_bg {clear:both;background:#525}
+#gnb_bottom {position:relative;text-align:center}
+.gnb_category_sub {position:relative;margin:0 auto;padding:0 0 0 10px;width:1200px;height:190px;text-align:left}
+.gnb_category_sub ul {float:left;margin:0; padding:0;width:160px;list-style:none}
+.gnb_category_sub ul:first-child {width:150px}
+.gnb_category_sub {font:11px '돋움',dotum;color:#bbb;line-height:18px}
+.gnb_category_sub ul li {color:#bbb}
+.gnb_category_sub ul li a {text-decoration:none;font:11px '돋움',dotum;color:#bbb;line-height:18px}
+.gnb_category_sub ul li a:hover {color:#fff}
+.gnb_category_sub .category_title {padding:25px 0 7px 1px;font:bold 11px Georgia,'돋움',dotum;color:#fff;letter-spacing:1px}
+.gnb_category_sub #bank_account {font:12px '굴림',gulim;line-height:18px}
+.gnb_category_sub .blank_area {padding-left:15px}
+
+/* 사업자정보 */
+#wrap_copyright {position:relative;padding:7px 0 20px;text-align:center;font:11px '돋움',dotum;color:#999;line-height:20px}
+#wrap_copyright #logo_bottom {position:absolute;margin-top:15px;right:45px}
+#wrap_copyright .line_style {padding:0 5px;color:#ccc}
+#wrap_copyright p {margin:0;padding:0}
+#wrap_copyright .address {margin-top:10px}
+#wrap_copyright .address a {text-decoration:none;font:11px '돋움',dotum;color:#999;line-height:20px}
+#wrap_copyright .address a:hover {color:#333}
+#wrap_copyright .copy {margin-top:15px}

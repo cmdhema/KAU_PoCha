@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 서브페이지 전용 css */
+
+/* 롤링이미지(서브페이지 전용) */
+.sub_visual {position:relative;margin:0 auto;width:98%;height:300px;text-align:center;overflow:hidden;z-index:1}
+.sub_visual .visuals a {display:none;position:absolute;left:0;top:0;width:100%;height:300px;text-align:left;text-indent:-9999px;opacity:0;filter:alpha(opacity=0)}
+.sub_visual .circle {position:absolute;left:0;bottom:15px;width:100%;z-index:2}
+.sub_visual .circle a {display:inline-block;margin:0 3px 0 3px;width:10px;height:10px;text-align:left;text-indent:-9999px;background:#fff; border:1px solid #ccc}
+.sub_visual .circle a:hover {opacity:1;background:#999;border:1px solid #777}
+.sub_visual .circle a.active {opacity:1;background:#999;border:1px solid #777}
+.sub_visual .spinn {position:absolute;top:127px;z-index:3}
+.sub_visual .prev {left:20px}
+.sub_visual .next {right:20px}
+
+/* 레이아웃 왼쪽 영역(왼쪽메뉴) */
+#gnb_left.fixed {position:fixed;top:-45px}
+#contents_left {float:left;margin-top:50px;width:200px;color:#777;text-align:right}
+#contents_left .left_title {clear:both;padding-top:8px;padding-right:20px;width:160px;height:22px;background:#7b327b;font:bold 12px Nanum Gothic,'나눔고딕';color:#fff;text-align:right}
+@-moz-document url-prefix() {#left_content .left_title {padding-top:7px}}
+#contents_left .top_blank {margin-top:10px}
+#contents_left ul {margin:0;padding:0;width:180px}
+#contents_left ul.cate a {display:block;padding:5px 20px 5px 0;text-decoration:none;font:12px arial,'굴림',gulim;color:#777;line-height:14px}
+#contents_left ul.cate li {list-style:none}
+#contents_left ul.cate li:hover > a {background:#eee;color:#000}
+#contents_left ul.cate li:hover > a.fly {background:url(../../../img/gnb_sub_arrow.gif) no-repeat 170px #eee}
+#contents_left ul.cate a:hover {background:#1b2034;color:#fff;visibility:visible}
+#contents_left ul.cate li a.fly {background:url(../../../img/gnb_sub_arrow.gif) no-repeat 170px}
+#contents_left ul.cate li a.fly:hover {background:url(../../../img/gnb_sub_arrow.gif) no-repeat 170px #eee}
+#contents_left ul.cate li ul.sub_gnb {position:absolute;left:180px;visibility:hidden;background:#fbfbfb;z-index:111}
+#contents_left ul.cate li ul.sub_gnb li a {display:block;padding:5px 10px 3px;text-decoration:none;font:12px '굴림',gulim,arial;line-height:16px}
+#contents_left ul.cate li:hover > ul.sub_gnb {margin:-24px 0 0 0;padding:0;width:150px;visibility:visible}
+#contents_left ul.cate li:hover > ul.sub_gnb li {height:100%}
+#contents_left ul.cate li:hover > ul.sub_gnb li:hover a {background:#eee}
+#contents_left ul.cate li:hover > ul.sub_gnb li a {color:#777;text-align:left}
+#contents_left ul.cate li:hover > ul.sub_gnb li a:hover {color:#222}
+
+/* 레이아웃 왼쪽 영역(쇼핑몰 운영 정보) */
+.top_blank_title {margin-top:25px}
+#phone_num {margin-top:15px;margin-right:40px;font:16px arial,'굴림',gulim;color:#555;line-height:20px}
+#shop_time {margin-top:10px;margin-right:40px;font:11px '돋움',dotum;line-height:16px}
+#bank_account_left {margin-top:15px;margin-right:40px;font:12px '굴림',gulim;line-height:18px}
+
+/* 레이아웃 오른쪽 영역 */
+#contents_right {float:right;padding:20px 0;width:1000px;min-height:600px;_height:600px;overflow-x:hidden;zoom:1}
+.wrap_title {height:54px;background:url(../../../img/title_line.gif) repeat-x}

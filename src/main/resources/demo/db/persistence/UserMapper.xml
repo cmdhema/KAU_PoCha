@@ -1,0 +1,18 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="demo.db.persistence.UserMapper">
+
+	<insert id="insertUser" parameterType="demo.db.model.User"
+		useGeneratedKeys="true" keyProperty="idx">
+		insert into user (userId, password, userName, address, phoneNumber, email) 
+		values(#{userId}, #{userPassword}, #{userName}, #{address}, #{phoneNumber}, #{email})
+	</insert>
+
+	<select id="getUsers" resultType="demo.db.model.User">
+		SELECT userId, userName, phoneNumber, email, address FROM
+		user
+	</select>
+
+
+</mapper>
+

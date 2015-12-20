@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 카페24 원본 css 제어용 css */
+
+/* 카페24 원본 css 제어용(초기화) */
+body {min-width:1400px !important}
+body, code {font:0.75em arial,'굴림',gulim,Verdana,'돋움',dotum,AppleGothic,sans-serif !important}
+
+/* 상품상세 게시판 글 없을 경우 글자색(/css/module/product/additional.css) */
+.xans-product-additional div.board p.nodata {font-weight:normal !important;color:#999 !important}
+
+/* 상품리스트(product/list.html) 페이지(/css/module/product/menupackage.css) */
+.xans-product-menupackage .title h2 {background:none !important;text-align:center}
+.xans-product-menupackage .menuCategory {border:0 !important}
+
+/* 상품리스트 페이지 "등록 제품" 글자색(/css/module/product/listnormal.css) */
+.xans-product-normalmenu .prdCount {color:#555 !important}
+
+/* 서브페이지 네비게이션(/layout/basic/css/layout.css) */
+.path li a {font-family:gulim}
+.path li strong, .path li strong a {font-family:gulim}

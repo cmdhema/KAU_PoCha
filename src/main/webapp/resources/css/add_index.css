@@ -1,0 +1,68 @@
+﻿@charset "utf-8";
+
+/* 메인페이지 전용 css */
+
+/* 롤링이미지(메인페이지 전용) */
+.main_visual {position:relative;margin:0 auto;width:98%;height:600px;text-align:center;overflow:hidden;z-index:1}
+.main_visual .visuals a {display:none;position:absolute;left:0;top:0;width:100%;height:600px;text-align:left;text-indent:-9999px;opacity:0;filter:alpha(opacity=0)}
+.main_visual .circle {position:absolute;left:0;bottom:15px;width:100%;z-index:2}
+.main_visual .circle a {display:inline-block;margin:0 3px 0 3px;width:10px;height:10px;text-align:left;text-indent:-9999px;background:#fff;border:1px solid #ccc}
+.main_visual .circle a:hover {opacity:1;background:#555;border:1px solid #777}
+.main_visual .circle a.active {opacity:1;background:#555;border:1px solid #777}
+.main_visual .spinn {position:absolute;top:277px;z-index:3}
+.main_visual .prev {left:20px}
+.main_visual .next {right:20px}
+
+/* 추천상품(슬라이드) */
+#middle_blank {clear:both;height:45px}
+#title_area_hot {clear:both;position:relative;font:24px Nanum Gothic,'나눔고딕';color:#c70000;font-weight:800;text-align:center}
+#slide_item {margin-top:45px;margin-left:-45px;width:1250px;height:308px}
+#slide_item #slide_btn_prev {float:left;margin-top:84px}
+#slide_item #slide_btn_next {float:right;margin-top:84px;margin-right:-37px}
+#slide_item #viewArea {position:relative;margin-left:35px;width:1210px;height:263px;overflow:hidden}
+#slide_item #viewArea #imgList {position:absolute;left:0;top:0;width:2000px}
+#slide_item #viewArea #imgList div {float:left;margin:0px;padding:0}
+#slide_item #viewArea #imgList div img {margin:0 13px;width:218px;height:218px}
+#slide_item #viewArea #imgList a {text-decoration:none;font:12px gulim; color:#555;outline:none}
+#slide_item #viewArea #imgList p {margin:0 13px;padding-top:10px;width:216px;text-align:center;white-space:nowrap;overflow-x:hidden}
+#slide_item #viewArea #imgList p a * {text-decoration:none;color:#999}
+#slide_item #viewArea #imgList .price {display:block;padding:3px 0 20px;font:bold 12px gulim;color:#555;text-align:center}
+
+/* 공지사항(스크롤) */
+#wrap_notice {clear:both;position:relative;margin:0 auto;width:1200px;height:61px;background:#f2f2f2}
+#notice_line_right {float:right;width:5px;height:61px;background:url(../../../img/notice_line_right.gif) no-repeat}
+#notice_title {float:left}
+#notice_title img {margin-top:12px}
+#notice {float:left;margin-top:24px;margin-left:15px}
+.notice_list a {text-decoration:none;font:bold 12px '굴림',gulim;color:#555}
+.notice_list a:hover {color:#000}
+.notice_list ul.marquee {display:block;position:relative;margin:0;padding:0;width:900px;height:15px;list-style:none;overflow:hidden}
+.notice_list ul.marquee li {display:block;position:absolute;top:-999em;left:0;white-space:nowrap}
+
+/* 동영상 or 배너 */
+#banner_area1_title {position:absolute;margin-top:-28px;padding-left:13px;font:bold 14px Nanum Gothic,'나눔고딕';color:#555;background:url(../../../img/title_main_icon.gif) 0 2px no-repeat}
+#banner_area1 {float:left;margin-top:76px;margin-bottom:50px;width:480px;height:390px;overflow:hidden}
+#banner_area2 {float:left;margin-top:76px;margin-left:21px;width:168px;height:390px;overflow:hidden}
+
+/* 최신글, 아이콘 링크 */
+#latest_area {float:right;margin-top:76px;width:510px;height:390px;overflow:hidden}
+.latest_title_round {clear:both;width:510px;height:30px;background:url(../../../img/latest_title_line.gif) repeat-x}
+.latest_title {float:left;margin-bottom:10px;padding:0 10px 0 13px;font:bold 14px Nanum Gothic,'나눔고딕';color:#555;background:url(../../../img/title_main_icon.gif) 0 2px no-repeat #fff}
+.latest_title a {text-decoration:none;color:#555}
+.latest_title a:hover {color:#000}
+.latest_more {float:right;margin-top:-7px;padding:5px 2px 5px 10px;font:bold 12px Nanum Gothic,'나눔고딕';background:#fff}
+.latest_more a {text-decoration:none;color:#777}
+.latest_more a:hover {color:#000}
+.latest_round {clear:both;height:84px}
+.latest_blank {clear:both;height:30px}
+ul.latest_basic {clear:both;position:relative;margin:0 0 0 12px;padding:0;width:498px;list-style:none;text-align:left}
+ul.latest_basic li {padding-top:9px;height:18px;font:12px gulim;color:#999;vertical-align:bottom;border-bottom:1px dotted #ddd}
+ul.latest_basic li a {text-decoration:none;font:12px gulim;color:#777}
+ul.latest_basic li a:hover {color:#000}
+.latest_new img {margin-top:1px;margin-left:10px}
+@media screen and (-webkit-min-device-pixel-ratio:0) {.latest_new img {margin-top:3px}}
+@-moz-document url-prefix() {.latest_new img {margin-top:4px}}
+.latest_date {float:right;color:#999}
+ul#icon_list {clear:both;position:relative;margin:0 0 0 25px;padding:0;list-style:none}
+ul#icon_list li {float:left}
+ul#icon_list img {margin-right:11px}
