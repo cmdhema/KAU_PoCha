@@ -1,0 +1,20 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="demo.db.persistence.CommunityMapper">
+
+	<insert id="insertBoard" parameterType="demo.db.model.Board"
+		useGeneratedKeys="true" keyProperty="idx">
+		insert into board (boardId, contents, userId, title)
+		values(#{boardId}, #{contents}, #{userId}, #{title})
+	</insert>
+
+	<select id="getBoards" resultType="demo.db.model.Board" parameterType="int">
+		SELECT * FROM board where boardId = #{boardId}
+	</select>
+
+	<select id="getBoard" resultType="demo.db.model.Board" parameterType="int">
+		SELECT * FROM board where idx = #{idx}
+	</select>
+
+</mapper>
+

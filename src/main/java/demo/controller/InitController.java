@@ -8,11 +8,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import demo.db.persistence.UserMapper;
+import demo.util.GlobalVariable;
+
 @RestController
 public class InitController {
 	
 	@Autowired
 	StringRedisTemplate redis;
+	
+	@Autowired
+	UserMapper userMapper;
 	
 	@RequestMapping("/")
 	public ModelAndView index(@CookieValue(value="token", defaultValue="null") String cookieToken) {
@@ -22,7 +28,10 @@ public class InitController {
 		if ( cookieToken.equals("null") ) {
 			return mv;
 		} else {
-			if ( ops.get(cookieToken).length() > 0 ) {
+			GlobalVariable.token = ops.get(cookieToken);
+			String userId = ops.get(cookieToken);
+			if ( userId.length() > 0 ) {
+				GlobalVariable.currentUserId = userId;
 				System.out.println("Index redis token : " + ops.get(cookieToken));
 				mv.addObject("state", "login");
 			} else {

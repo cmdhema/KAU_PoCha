@@ -3,7 +3,6 @@ package demo.controller;
 import java.util.List;
 
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +19,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import demo.db.model.User;
 import demo.db.persistence.UserMapper;
+import demo.util.GlobalVariable;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
@@ -44,11 +44,13 @@ public class UserController {
 		User dbUser = userMapper.getUser(user);
 		System.out.println("Login");
 		if (dbUser != null) {
-			System.out.println("Login DB user : " + dbUser.getEmail());
-			String token = Jwts.builder().setSubject(dbUser.getEmail()).signWith(SignatureAlgorithm.HS512, "secret").compact();
+			System.out.println("Login DB user : " + dbUser.getUserId());
+			String token = Jwts.builder().setSubject(dbUser.getUserId()).signWith(SignatureAlgorithm.HS512, "secret").compact();
 			ValueOperations<String, String> ops = this.redis.opsForValue();
-			ops.set(token, dbUser.getEmail());
+			ops.set(token, dbUser.getUserId());
 			response.addCookie(new Cookie("token", token));
+			GlobalVariable.token = token;
+			GlobalVariable.currentUser = user;
 		} else {
 			System.out.println("Login no user");
 		}
@@ -61,6 +63,7 @@ public class UserController {
 	public RedirectView logout(@CookieValue(value = "token", defaultValue = "null") String cookieToken, HttpServletResponse response) {
 		System.out.println("Logout");
 		redis.delete(cookieToken);
+		GlobalVariable.token = null;
 		Cookie cookie = new Cookie("token", null);
 		cookie.setMaxAge(0);
 		response.addCookie(cookie);

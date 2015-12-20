@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import demo.util.GlobalVariable;
+
 @RestController
 public class AboutusController {
 	
@@ -18,7 +20,8 @@ public class AboutusController {
 		} else if ( id == 1 ) {
 			mav.setViewName("aboutus_usage");
 		}
-		
+		if ( GlobalVariable.token != null )
+			mav.addObject("state", "login");
 		
 		return mav;
 	}

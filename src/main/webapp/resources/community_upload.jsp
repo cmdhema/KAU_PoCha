@@ -7,7 +7,7 @@
 	href="/resources/css/community.css" />
 <link rel="stylesheet" type="text/css"
 	href="/resources/css/board/writePackage.css" />
-
+<script src="/resources/js/board.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
@@ -38,25 +38,11 @@
 					<p>${title }입니다.</p>
 				</div>
 			</div>
-			<form id="boardWriteForm" name="" action="/exec/front/Board/write/4"
+			<form id="boardWriteForm" name="" action="/community/${board_no }" modelAttribute="boardForm"
 				method="post" enctype="multipart/form-data">
-				<input id="board_no" name="board_no" value="4" type="hidden" /> <input
-					id="product_no" name="product_no" value="0" type="hidden" /> <input
-					id="move_write_after" name="move_write_after"
-					value="/board/free/list.html?board_no=4" type="hidden" /> <input
-					id="cate_no" name="cate_no" value="" type="hidden" /> <input
-					id="bUsePassword" name="bUsePassword" value="" type="hidden" /> <input
-					id="order_id" name="order_id" value="" type="hidden" /> <input
-					id="is_post_checked" name="is_post_checked" value="" type="hidden" />
-				<input id="61d84fef19c71c4642239b52449954d7"
-					name="61d84fef19c71c4642239b52449954d7"
-					value="b6c81b6f0348b976698477107847b4d0" type="hidden" />
+				<input id="board_no" name="boardId" value="${board_no }" type="hidden" /> 
 				<div
 					class="xans-element- xans-board xans-board-write-1002 xans-board-write xans-board-1002">
-					<!--
-            $login_page_url = /member/login.html
-            $deny_access_url = /index.html
-        -->
 					<div class="boardWrite ">
 						<table border="1" summary="">
 							<caption>글쓰기 폼</caption>
@@ -64,47 +50,14 @@
 							<tbody>
 								<tr class="first">
 									<th scope="row">제목</th>
-									<td><input id="subject" name="subject" fw-filter="isFill"
-										fw-label="제목" fw-msg="" class="inputTypeText" maxLength="125"
-										value="" type="text" /> <input id="notice0" name="notice[]"
-										fw-filter="" fw-label="공지사항" fw-msg="" value="T"
-										type="checkbox" /><label for="notice0">공지사항</label> <input
-										id="is_post0" name="is_post[]" fw-filter="" fw-label="게시안함"
-										fw-msg="" value="B" type="checkbox" /><label for="is_post0">게시안함</label></td>
-								</tr>
-								<tr class="displaynone">
-									<th scope="row">작성자</th>
-									<td></td>
-								</tr>
-								<tr class="displaynone">
-									<th scope="row">이메일</th>
-									<td></td>
-								</tr>
-								<tr class="displaynone">
-									<th scope="row">평점</th>
-									<td><input id="point0" name="point" fw-filter=""
-										fw-label="평점" fw-msg="" value="5" type="radio"
-										checked="checked" /><label for="point0"><span
-											class="point5"><em>★★★★★</em></span></label> <input id="point1"
-										name="point" fw-filter="" fw-label="평점" fw-msg="" value="4"
-										type="radio" /><label for="point1"><span
-											class="point4"><em>★★★★</em></span></label> <input id="point2"
-										name="point" fw-filter="" fw-label="평점" fw-msg="" value="3"
-										type="radio" /><label for="point2"><span
-											class="point3"><em>★★★</em></span></label> <input id="point3"
-										name="point" fw-filter="" fw-label="평점" fw-msg="" value="2"
-										type="radio" /><label for="point3"><span
-											class="point2"><em>★★</em></span></label> <input id="point4"
-										name="point" fw-filter="" fw-label="평점" fw-msg="" value="1"
-										type="radio" /><label for="point4"><span
-											class="point1"><em>★</em></span></label></td>
+									<td><input id="subject" name="title"
+										class="inputTypeText" value="" type="text" /></td>
 								</tr>
 								<tr>
-									<td colspan="2" class="write"><script
-											type="text/javascript"
-											src="http://editor.cafe24.com/js/nneditor.js"></script> <script
-											type="text/javascript">
-												NN.Config.instanceID = "content";
+									<td colspan="2" class="write">
+									<script type="text/javascript" src="http://editor.cafe24.com/js/nneditor.js"></script> 
+											<script type="text/javascript">
+												NN.Config.instanceID = "contents";
 												NN.Config.value = "";
 
 												var EDITORWRAPPER = {
@@ -292,85 +245,15 @@
 												}
 
 												$Editor.push(oNN_content,
-														"content");
-											</script> <input type="hidden" id="content_hidden"
-										fw-filter="isSimplexEditorFill" fw-label="내용"
-										value="oNN_content" /></td>
-								</tr>
-								<tr class="ucc">
-									<th scope="row">UCC URL</th>
-									<td><input id="ucc" name="ucc" size="35" fw-filter=""
-										fw-label="UCC URL" value="" type="text" />&nbsp;&nbsp;&nbsp;<label
-										class="size" for="ucc_width">넓이</label><input id="ucc_width"
-										name="ucc_width" size="2" value="400" type="text" />&nbsp;&nbsp;&nbsp;<label
-										class="size" for="ucc_height">높이</label><input id="ucc_height"
-										name="ucc_height" size="2" value="300" type="text" /></td>
-								</tr>
-							</tbody>
-							<tbody class="displaynone">
-								<tr>
-									<th scope="row">첨부파일1</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">첨부파일2</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">첨부파일3</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">첨부파일4</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">첨부파일5</th>
-									<td></td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<th scope="row">비밀번호</th>
-									<td><input id="password" name="password" fw-filter=""
-										fw-label="비밀번호" fw-msg="" value="" type="password" /></td>
-								</tr>
-								<tr class="displaynone">
-									<th scope="row">비밀글설정</th>
-									<td><input id="secure0" name="secure" fw-filter="isFill"
-										fw-label="비밀글설정" fw-msg="" value="F" type="radio"
-										checked="checked" /><label for="secure0">공개글</label> <input
-										id="secure1" name="secure" fw-filter="isFill" fw-label="비밀글설정"
-										fw-msg="" value="T" type="radio" /><label for="secure1">비밀글</label></td>
-								</tr>
-								<tr class="captcha displaynone">
-									<th scope="row">자동발송금지<br />보안문자
-									</th>
-									<td>
-										<p>
-											<img
-												src="http://img.echosting.cafe24.com/skin/base_ko_KR/board/ico_warning.gif"
-												alt="" /> 영문, 숫자 조합을 공백없이 입력하세요(대소문자구분)
-										</p>
-									</td>
-								</tr>
-								<tr class="agree displaynone">
-									<th scope="row">개인정보 수집 및 <br />이용 동의
-									</th>
-									<td><br /> 개인정보 수집 및 이용에 동의하십니까?</td>
+														"contents");
+											</script>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<div class="btnArea ">
-						<span class="left "><a href="#none"
-							onclick="BOARD.pre_comment('');"><img
-								src="http://img.echosting.cafe24.com/skin/base_ko_KR/board/btn_reply_admin.gif"
-								alt="관리자답변보기" /></a></span> <span class="left"><a
-							href="/board/free/list.html?board_no=4"><img
-								src="http://img.echosting.cafe24.com/skin/base_ko_KR/board/btn_list.gif"
-								alt="목록" /></a></span> <a href="#none"
-							onclick="BOARD_WRITE.form_submit('boardWriteForm');"><img
+						<a href="#none"
+							onclick="post('boardWriteForm');"><img
 							src="http://img.echosting.cafe24.com/skin/base_ko_KR/board/btn_register.gif"
 							alt="등록" /></a> <a href="/board/free/list.html?board_no=4"><img
 							src="http://img.echosting.cafe24.com/skin/base_ko_KR/board/btn_cancel.gif"
@@ -382,7 +265,7 @@
 
 	</div>
 	<!-- } 레이아웃 오른쪽 영역 끝 -->
-	
+
 	<jsp:include page="bottom.jsp"></jsp:include>
 </body>
 </html>

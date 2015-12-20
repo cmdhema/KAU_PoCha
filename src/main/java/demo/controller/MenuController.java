@@ -6,13 +6,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import demo.util.GlobalVariable;
+
 @RestController
 public class MenuController {
 
 	@RequestMapping("menu")
 	public ModelAndView index(@RequestParam("no") int id ) {
 		ModelAndView mav = new ModelAndView();
-		
+		if ( GlobalVariable.token != null )
+			mav.addObject("state", "login");
 		if ( id == 0 ) {
 			mav.setViewName("menu_all");
 		} else if ( id == 1 ) {
@@ -26,7 +29,8 @@ public class MenuController {
 	@RequestMapping("/menu/{id}")
 	public ModelAndView info(@PathVariable int id ) {
 		ModelAndView mav = new ModelAndView();
-		
+		if ( GlobalVariable.token != null )
+			mav.addObject("state", "login");
 		mav.setViewName("menu_info");
 		
 		return mav;

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -38,6 +39,7 @@
 				</div>
 				<p class="imgArea"></p>
 			</div>
+			
 			<div class="boardSort">
 				<span
 					class="xans-element- xans-board xans-board-replysort-1002 xans-board-replysort xans-board-1002 "></span>
@@ -59,23 +61,40 @@
 					<thead
 						class="xans-element- xans-board xans-board-listheader-1002 xans-board-listheader xans-board-1002 ">
 						<tr style="">
-							<th scope="col"><input class="boardListAll" value="all"
-								type="checkbox" /> 번호</th>
-							<th scope="col" class="displaynone">카테고리</th>
+							<th scope="col">
+							<input class="boardListAll" value="all" type="checkbox" /> 번호</th>
 							<th scope="col">제목</th>
 							<th scope="col">작성자</th>
 							<th scope="col" class="">작성일</th>
 							<th scope="col" class="">조회</th>
-							<th scope="col" class="displaynone">추천</th>
-							<th scope="col" class="displaynone">평점</th>
 						</tr>
 					</thead>
+					<c:if test="${count != '0' }">
+						<tbody class="xans-element- xans-board xans-board-list-1002 xans-board-list xans-board-1002"> 
+							<tr style="background-color:#FFFFFF; color:#555555;" class="xans-record-">
+								<c:forEach var="board" items="${boardList }">
+									<td><input class="boardChk" value="1" type="checkbox"  />1</td>
+		                			<td class="displaynone"></td>
+		                			<td class="subject">
+		                      			<a href="/community/content/${board.idx}" style="color:#555555;">${board.title}</a> <span class="comment"></span>
+		                			</td>
+	                				<td>${board.userId }</td>
+					                <td class="txtLess ">${board.date }</td>
+					                <td class="txtLess ">${board.read }</td>
+								</c:forEach>
+								
+				            </tr>
+						</tbody>
+					</c:if>
 				</table>
 			</div>
-			<div
+			<c:if test="${count == '0'}">
+						<div
 				class="xans-element- xans-board xans-board-empty-1002 xans-board-empty xans-board-1002 boardListEmpty  ">
 				<p>등록된 게시물이 없습니다.</p>
 			</div>
+			</c:if>
+
 			<div
 				class="xans-element- xans-board xans-board-buttonlist-1002 xans-board-buttonlist xans-board-1002  ">
 				<a href="/community/list?board_no=${board_no }" class=""><img
