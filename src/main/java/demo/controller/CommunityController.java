@@ -33,7 +33,7 @@ public class CommunityController {
 	@RequestMapping("community/list")
 	public ModelAndView list(@RequestParam("board_no") int id) {
 		ModelAndView mav = new ModelAndView();
-
+		System.out.println("Community list " + id);
 		mav.setViewName("community_upload");
 		if (id == 1) {
 			mav.addObject("title", "공지사항");

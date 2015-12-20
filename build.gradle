@@ -41,6 +41,10 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("mysql:mysql-connector-java:5.1.31")
     compile ("jstl:jstl:1.2")
+    compile("org.springframework.boot:spring-boot-starter-redis")
+    compile 'org.springframework.security:spring-security-config:3.2.0.RELEASE'
+    compile 'io.jsonwebtoken:jjwt:0.6.0'
+    
 }
 
 

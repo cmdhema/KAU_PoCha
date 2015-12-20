@@ -17,4 +17,8 @@ public class UserService {
 	public List<User> getUsers() {
 		return mapper.getUsers();
 	}
+	
+	public User getUser(User user) {
+		return mapper.getUser(user);
+	}
 }

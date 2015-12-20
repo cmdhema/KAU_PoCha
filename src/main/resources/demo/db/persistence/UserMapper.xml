@@ -9,10 +9,12 @@
 	</insert>
 
 	<select id="getUsers" resultType="demo.db.model.User">
-		SELECT userId, userName, phoneNumber, email, address FROM
-		user
+		SELECT * FROM user
 	</select>
 
+	<select id="getUser" resultType="demo.db.model.User" parameterType="demo.db.model.User">
+		SELECT * FROM user where userId=#{userId} and password=#{userPassword}
+	</select>
 
 </mapper>
 

@@ -1,4 +1,4 @@
-<%@ page contentType = "text/html;charset=utf-8" %>
+<%@ page contentType="text/html;charset=utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
 <head>
@@ -13,13 +13,38 @@
 <title>기본 레이아웃</title>
 <script src="/resources/js/jquery-1.11.3.min.js"></script>
 <script src="/resources/js/rolling_img.js"></script>
-<link rel="stylesheet" type="text/css" href="/resources/css/nanumgothic/nanumgothic.css"/>
-<link rel="stylesheet" type="text/css" href="/resources/css/add_index.css" />
+<link rel="stylesheet" type="text/css"
+	href="/resources/css/nanumgothic/nanumgothic.css" />
+<link rel="stylesheet" type="text/css"
+	href="/resources/css/add_index.css" />
 </head>
 <body>
-	<jsp:include page="header.jsp" ></jsp:include>
-	
-		<!-- 롤링이미지(메인페이지 전용) 시작 { -->
+	<jsp:include page="header.jsp"></jsp:include>
+
+	<div class="wrap_default">
+		<!-- 로고 시작 { -->
+		<div id="logo">
+			<a href="/"><img src="/resources/img/logo.gif" alt="" /></a>
+		</div>
+		<!-- } 로고 끝 -->
+
+		<!-- 상단메뉴 시작 { -->
+
+
+		<div id="gnb_top">
+			<div id="horizontal_nav">
+				<ul class="horizontal-dropdown">
+					<li><a href="/aboutus?no=0" class="gnb_main">ABOUT US</a>
+						<li><a href="menu?no=0" class="gnb_main">SHOPPING</a>
+							<li><a href="/community?board_no=1" class="gnb_main">COMMUNITY</a>
+								<li><a href="/location" class="gnb_main">LOCATION</a>
+				</ul>
+			</div>
+		</div>
+		<!-- } 상단메뉴 끝 -->
+	</div>
+
+	<!-- 롤링이미지(메인페이지 전용) 시작 { -->
 
 	<div id="mainVisual" class="main_visual">
 		<div class="visuals">
@@ -41,8 +66,8 @@
 			onmouseout="this.src='/resources/img/rolling_next.png'" alt="Next" /></a>
 	</div>
 	<!-- } 롤링이미지(메인페이지 전용) 끝 -->
-	
-	
+
+
 	<!-- 추천상품(슬라이드) 시작 { -->
 	<div id="middle_blank"></div>
 	<div
@@ -78,8 +103,8 @@
 							<p>
 								<a
 									href="/product/detail.html?product_no=14&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 6</span></a><br />
-								<span class="price">30,000원</span>
+									style="font-size: 12px; color: #555555;">샘플상품 6</span></a><br /> <span
+									class="price">30,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
@@ -92,8 +117,8 @@
 							<p>
 								<a
 									href="/product/detail.html?product_no=13&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 5</span></a><br />
-								<span class="price">25,000원</span>
+									style="font-size: 12px; color: #555555;">샘플상품 5</span></a><br /> <span
+									class="price">25,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
@@ -106,8 +131,8 @@
 							<p>
 								<a
 									href="/product/detail.html?product_no=12&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 4</span></a><br />
-								<span class="price">20,000원</span>
+									style="font-size: 12px; color: #555555;">샘플상품 4</span></a><br /> <span
+									class="price">20,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
@@ -120,8 +145,8 @@
 							<p>
 								<a
 									href="/product/detail.html?product_no=11&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 3</span></a><br />
-								<span class="price">15,000원</span>
+									style="font-size: 12px; color: #555555;">샘플상품 3</span></a><br /> <span
+									class="price">15,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
@@ -134,8 +159,8 @@
 							<p>
 								<a
 									href="/product/detail.html?product_no=16&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 8</span></a><br />
-								<span class="price">40,000원</span>
+									style="font-size: 12px; color: #555555;">샘플상품 8</span></a><br /> <span
+									class="price">40,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
@@ -148,8 +173,8 @@
 							<p>
 								<a
 									href="/product/detail.html?product_no=15&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 7</span></a><br />
-								<span class="price">35,000원</span>
+									style="font-size: 12px; color: #555555;">샘플상품 7</span></a><br /> <span
+									class="price">35,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
@@ -162,8 +187,8 @@
 							<p>
 								<a
 									href="/product/detail.html?product_no=10&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 2</span></a><br />
-								<span class="price">10,000원</span>
+									style="font-size: 12px; color: #555555;">샘플상품 2</span></a><br /> <span
+									class="price">10,000원</span>
 							</p>
 						</div>
 						<div class="xans-record-">
@@ -176,8 +201,8 @@
 							<p>
 								<a
 									href="/product/detail.html?product_no=9&cate_no=1&display_group=2"><span
-									style="font-size: 12px; color: #555555;">샘플상품 1</span></a><br />
-								<span class="price">5,000원</span>
+									style="font-size: 12px; color: #555555;">샘플상품 1</span></a><br /> <span
+									class="price">5,000원</span>
 							</p>
 						</div>
 					</div>
@@ -280,9 +305,9 @@
 		<!-- } 맨 위로 버튼 끝 -->
 	</div>
 
-	<jsp:include page="bottom.jsp" ></jsp:include>
-	
-	
+	<jsp:include page="bottom.jsp"></jsp:include>
+
+
 	<div class="wrap_default">
 		<!-- 참고: 결제를 위한 필수 영역 -->
 		<div id="progressPaybar" style="display: none;">

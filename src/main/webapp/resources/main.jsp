@@ -35,31 +35,6 @@
 		<!-- } 상단메뉴 끝 -->
 	</div>
 
-	<div class="wrap_default">
-		<!-- 검색 시작 { -->
-		<form id="searchBarForm" name="" action="/product/search.html"
-			method="get" enctype="multipart/form-data">
-			<input id="banner_action" name="banner_action" value="" type="hidden" />
-			<div id="wrap_search"
-				class="xans-element- xans-layout xans-layout-searchheader ">
-				<!--
-    $product_page=/product/detail.html
-    $category_page=/product/list.html
-    -->
-				<fieldset>
-					<legend style="display: none">검색</legend>
-					<input id="keyword" name="keyword" fw-filter="" fw-label="검색어"
-						fw-msg="" class="inputTypeText"
-						onmousedown="SEARCH_BANNER.clickSearchForm(this)" value=""
-						type="text" /><img src="/resources/img/btn_search.gif" alt="검색"
-						onclick="SEARCH_BANNER.submitSearchBanner(this); return false;"
-						style="cursor: pointer" />
-				</fieldset>
-			</div>
-		</form>
-		<!-- } 검색 끝 -->
-	</div>
-
 	<!-- 추가된 index 전용 css -->
 
 

@@ -40,10 +40,10 @@
 				<ul>
 					<c:choose>
 						<c:when test="${state == 'login' }">
-							<li><a href="/login">LOGIN</a></li>
+							<li><a href="/logout"><span id="logout_color">LOGOUT</span></a></li>
 						</c:when>
 						<c:when test="${state == null }">
-							<li><a href="/"><span id="logout_color">LOGOUT</span></a></li>
+							<li><a href="/login">LOGIN</a></li>
 						</c:when>
 					</c:choose>
 					<li class="gnb_blank">|</li>

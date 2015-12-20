@@ -16,8 +16,6 @@
 	<jsp:include page="main.jsp"></jsp:include>
 	<jsp:include page="rightmenu_community.jsp"></jsp:include>
 
-
-
 	<!-- 레이아웃 오른쪽 영역 시작 { -->
 	<div id="contents_right">
 

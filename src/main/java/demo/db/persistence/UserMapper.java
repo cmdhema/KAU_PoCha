@@ -7,4 +7,5 @@ import demo.db.model.User;
 public interface UserMapper {
 	public void insertUser(User user);
 	public List<User> getUsers();
+	public User getUser(User user);
 }

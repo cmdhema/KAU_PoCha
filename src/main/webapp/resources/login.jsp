@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<script src="/resources/js/login.js"></script>
 <link rel="stylesheet" type="text/css" href="/resources/css/login.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
@@ -28,7 +29,7 @@
 			<h2>로그인</h2>
 		</div>
 
-		<form id="member_form_5595130406" name=""
+		<form id="member_form_5595130406" name="" modelAttribute="loginForm"
 			action="/login" method="post"
 			enctype="multipart/form-data">
 			<input id="returnUrl" name="returnUrl"
@@ -50,11 +51,11 @@
 					</h3>
 					<fieldset>
 						<legend>회원로그인</legend>
-						<label class="id"><span>아이디</span><input id="member_id"
-							name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg=""
-							class="inputTypeText" value="" type="text" /></label> <label
-							class="password"><span>비밀번호</span><input
-							id="member_passwd" name="member_passwd"
+						<label class="id">
+						<span>아이디</span>
+						<input id="member_id" name="userId" fw-filter="isFill" fw-label="아이디" fw-msg="" class="inputTypeText" value="" type="text" />
+							</label> <label class="password"><span>비밀번호</span><input
+							id="member_passwd" name="userPassword"
 							fw-filter="isFill&isMin[4]&isMax[16]" fw-label="패스워드" fw-msg=""
 							value="" type="password" /></label>
 						<p class="security">
