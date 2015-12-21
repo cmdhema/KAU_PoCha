@@ -23,7 +23,9 @@
 			</ol>
 		</div>
 
-		<div>연혁 내용 삽입</div>
+		<div>
+			<img src="/resources/img/introduce.png"/>
+		</div>
 
 	</div>
 	<!-- } 레이아웃 오른쪽 영역 끝 -->

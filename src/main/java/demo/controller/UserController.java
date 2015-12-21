@@ -45,7 +45,10 @@ public class UserController {
 		System.out.println("Login");
 		if (dbUser != null) {
 			System.out.println("Login DB user : " + dbUser.getUserId());
-			String token = Jwts.builder().setSubject(dbUser.getUserId()).signWith(SignatureAlgorithm.HS512, "secret").compact();
+			String token = Jwts.builder()
+							.setSubject(dbUser.getUserId())
+							.signWith(SignatureAlgorithm.HS256, "secret")
+							.compact();
 			ValueOperations<String, String> ops = this.redis.opsForValue();
 			ops.set(token, dbUser.getUserId());
 			response.addCookie(new Cookie("token", token));

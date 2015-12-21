@@ -19,6 +19,7 @@
 				<ul class="cate top_blank">
 					<li><a href="/aboutus?no=0">회사소개</a></li>
 					<li><a href="/aboutus?no=1">이용안내</a></li>
+					<li><a href="/aboutus?no=2">창업 트랜드</a></li>
 				</ul>
 				<!-- } 레이아웃 왼쪽 영역(왼쪽메뉴) 끝-->
 				<!-- 레이아웃 왼쪽 영역(쇼핑몰 운영 정보) 시작 { -->

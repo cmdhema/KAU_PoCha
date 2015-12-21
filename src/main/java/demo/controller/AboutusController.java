@@ -19,6 +19,8 @@ public class AboutusController {
 			mav.setViewName("aboutus_introduce");
 		} else if ( id == 1 ) {
 			mav.setViewName("aboutus_usage");
+		} else if ( id == 2 ) {
+			mav.setViewName("aboutus_trend");
 		}
 		if ( GlobalVariable.token != null )
 			mav.addObject("state", "login");
